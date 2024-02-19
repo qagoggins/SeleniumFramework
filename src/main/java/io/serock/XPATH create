@@ -1,0 +1,22 @@
+XPath=//tagname[@Attribute='Value']
+// -> Select current node
+Tagname -> Tagname of the particular node
+@ -> Select attribute
+Attribute -> Attribute name of the node
+Value -> Value of the attribute
+
+Absolute XPath: /html/body/div[2]/div[1]/div/h4[1]/b/html[1]/body[1]/div[2]/div[1]/div[1]/h4[1]/b[1]
+Relative XPath: //div[@class='featured-box cloumnsize1']//h4[1]//b[1]
+
+
+Например
+<div class="featured-box" style="height: 700px;">
+    <h4>
+        <b>Testing</b>
+    </h4>
+    <p id="paragraph">Brooo</p>
+</div>
+
+если мы хотим обратиться к Testing,
+мы можем сказать //*[@class='featured-box']//*[text()='Testing'],
+а если к Brooo , то //*[@class='featured-box']//p[@id='Brooo']

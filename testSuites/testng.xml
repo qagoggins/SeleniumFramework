@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="All Test Suite">
+    <listeners>
+        <listener class-name="io.serock.testComponents.Listeners"></listener>
+    </listeners>
+    <test thread-count="5" name="Submit order test">
+        <classes>
+            <class name="io.serock.tests.SubmitOrderTest"/>
+        </classes>
+    </test>
+<!--  thread-count -> amount of browsers running simultaneously -->
+<!--  parallel="tests" -> running tests simultaneously  -->
+<!--  name="Submit order test" -> the name of test or test suite  -->
+    <test thread-count="5" name="Error validation test">
+        <classes>
+            <class name="io.serock.tests.ErrorValidations"/>
+        </classes>
+    </test>
+</suite>

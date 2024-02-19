@@ -1,0 +1,33 @@
+HOW TO RUN:
+    mvn test -P<PROFILENAME>
+    you can find profile name in pom.xml's <profile> id(which is name)
+
+    mvn test -PRegression
+
+    with properties:
+    mvn test -P<PROFILENAME> -D<property name>=<value>
+    mvn test -PRegression -Dbrowser=firefox
+
+    Запуск Jenkins'а:
+        в терминале переходим на C:/Users/user
+        java -jar jenkins.war -httpPort=8080
+        Дальше в браузере открываем localhost:8080
+
+Stack:
+Selenium
+TestNG
+ExtentReports
+Jackson
+Apache Commons IO
+
+What features:
+Page Objects Model
+Page Factory
+JSONtoString
+BaseTest methods
+Listeners
+Retry Analyzer
+Data Provider
+Test suites , group of tests, xml files
+Configuration
+Auto-Reports
